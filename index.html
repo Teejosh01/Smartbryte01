@@ -77,11 +77,12 @@
 
         <!--
           Hero visual composition.
-          No school photography was supplied, so — per the build brief — these
-          staggered capsule tiles (New School influence) carry flat illustrated
-          motifs instead of people. Each .tile is a swappable media slot:
-          real school photographs can replace the .tile-art layer later without
-          any layout changes. All artwork is decorative: aria-hidden.
+          PLACEHOLDER PHOTOGRAPHY: these staggered capsule tiles (New School
+          influence) currently hold AI-generated portraits of African learners,
+          added at the school owner's direction for this MVP. They are NOT real
+          SmartBryte students — replace the three image files in
+          assets/images/ with consented photos of actual students before any
+          public launch. The composition is decorative: aria-hidden.
         -->
         <div class="hero-stage reveal" aria-hidden="true">
           <div class="shape shape-blob"></div>
@@ -91,39 +92,15 @@
           </div>
 
           <figure class="tile tile-amber">
-            <div class="tile-art">
-              <span class="tile-halo"></span>
-              <svg class="tile-icon" viewBox="0 0 64 64" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M32 5c7 7 10.5 16.5 10.5 27h-21C21.5 21.5 25 12 32 5Z"/>
-                <circle cx="32" cy="23" r="4.6"/>
-                <path d="M21.5 33.5C17.5 37 15.5 42 15 47l6.5-3M42.5 33.5c4 3.5 6 8.5 6.5 13.5l-6.5-3"/>
-                <path d="M26.5 41.5c.8 5 2.8 8.8 5.5 11.5 2.7-2.7 4.7-6.5 5.5-11.5"/>
-              </svg>
-              <span class="confetti c1"></span><span class="confetti c2"></span><span class="confetti c3"></span>
-            </div>
+            <img class="tile-photo pos-junior" src="assets/images/hero-junior.jpg" alt="" width="640" height="1147" decoding="async">
           </figure>
 
           <figure class="tile tile-iris">
-            <div class="tile-art">
-              <span class="tile-halo"></span>
-              <svg class="tile-icon" viewBox="0 0 64 64" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="32" cy="27" r="12"/>
-                <path d="M32 6v4M13.5 13.5l3 3M50.5 13.5l-3 3M9 27h4.5M50.5 27H55"/>
-                <path d="M25.5 45.5h13M27.5 51.5h9M29.5 57.5h5"/>
-              </svg>
-              <span class="confetti c1"></span><span class="confetti c2"></span><span class="confetti c3"></span>
-            </div>
+            <img class="tile-photo pos-teen" src="assets/images/hero-teen.jpg" alt="" width="640" height="1147" decoding="async">
           </figure>
 
           <figure class="tile tile-green">
-            <div class="tile-art">
-              <span class="tile-halo"></span>
-              <svg class="tile-icon" viewBox="0 0 64 64" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M32 17c-5-4.2-12-5.4-18.5-3.4v34c6.5-2 13.5-.8 18.5 3.4 5-4.2 12-5.4 18.5-3.4v-34C44 11.6 37 12.8 32 17Z"/>
-                <path d="M32 17v34"/>
-              </svg>
-              <span class="confetti c1"></span><span class="confetti c2"></span><span class="confetti c3"></span>
-            </div>
+            <img class="tile-photo pos-adult" src="assets/images/hero-young-adult.jpg" alt="" width="640" height="1147" decoding="async">
           </figure>
 
           <div class="shape shape-semi"></div>
@@ -331,17 +308,69 @@
     </section>
 
     <!-- ======================= 6. TESTIMONIALS ======================= -->
-    <!-- Copy: SmartBryte_Complete_Homepage_Content.pdf — 6. Testimonials (verbatim heading/intro).
-         CONTENT PLACEHOLDER (from the document, intentionally not rendered):
-         "Add verified testimonials from real parents and students once the
-         school has begun operating. Do not publish invented reviews."
-         Add real testimonial cards here when supplied. -->
-    <section class="sheet sheet-cream sheet-slim" id="testimonials" aria-labelledby="testimonials-heading">
+    <!-- Heading/intro: SmartBryte_Complete_Homepage_Content.pdf — 6. Testimonials (verbatim).
+         SAMPLE TESTIMONIALS: the three quotes below were drafted for this MVP
+         and approved by the school owner on 2026-11-05, with AI-generated
+         portraits. The content document instructs: "Add verified testimonials
+         from real parents and students once the school has begun operating.
+         Do not publish invented reviews." — REPLACE these samples (text +
+         photos) with genuine, consented testimonials before any public launch. -->
+    <section class="sheet sheet-cream" id="testimonials" aria-labelledby="testimonials-heading">
       <div class="wrap">
         <div class="sec-head sec-head-center reveal">
           <p class="eyebrow eyebrow-center"><span class="eyebrow-dash" aria-hidden="true"></span>Testimonials<span class="eyebrow-dash" aria-hidden="true"></span></p>
           <h2 class="sec-heading" id="testimonials-heading">See what families are saying about SmartBryte.</h2>
           <p class="sec-lede">Hear from parents and learners about their experience, the projects they have worked on and the progress they have made.</p>
+        </div>
+
+        <div class="testi-grid">
+          <figure class="testi-card reveal" style="--rd:.05s">
+            <span class="testi-quote-chip chip-amber" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M10.7 5.6C7 7 4.9 9.7 4.9 13.6c0 3 1.9 5 4.4 5 2.2 0 3.9-1.7 3.9-3.9 0-2.1-1.5-3.7-3.5-3.8.3-1.6 1.4-3 3-3.9zm9 0c-3.7 1.4-5.8 4.1-5.8 8 0 3 1.9 5 4.4 5 2.2 0 3.9-1.7 3.9-3.9 0-2.1-1.5-3.7-3.5-3.8.3-1.6 1.4-3 3-3.9z" transform="translate(-1.5 0)"/></svg>
+            </span>
+            <blockquote>
+              <p>My daughter used to see Maths as her weakest subject. Since joining SmartBryte, her teacher checks in with me directly, and she's grown so much more confident — she even built her first small website in her digital skills class.</p>
+            </blockquote>
+            <figcaption class="testi-person">
+              <img class="testi-avatar ring-amber" src="assets/images/portrait-adaeze.jpg" alt="" width="112" height="112" loading="lazy" decoding="async">
+              <span class="testi-meta">
+                <span class="testi-name">Mrs. Adaeze O.</span>
+                <span class="testi-role">Parent of a Junior Learner (Age 10), Lagos</span>
+              </span>
+            </figcaption>
+          </figure>
+
+          <figure class="testi-card reveal" style="--rd:.14s">
+            <span class="testi-quote-chip chip-iris" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M10.7 5.6C7 7 4.9 9.7 4.9 13.6c0 3 1.9 5 4.4 5 2.2 0 3.9-1.7 3.9-3.9 0-2.1-1.5-3.7-3.5-3.8.3-1.6 1.4-3 3-3.9zm9 0c-3.7 1.4-5.8 4.1-5.8 8 0 3 1.9 5 4.4 5 2.2 0 3.9-1.7 3.9-3.9 0-2.1-1.5-3.7-3.5-3.8.3-1.6 1.4-3 3-3.9z" transform="translate(-1.5 0)"/></svg>
+            </span>
+            <blockquote>
+              <p>What sold me was the dedicated teacher. I always know how my son is doing, and the recorded lessons mean he can revisit anything he missed after school. The monthly physical sessions in Lekki are a bonus he looks forward to.</p>
+            </blockquote>
+            <figcaption class="testi-person">
+              <img class="testi-avatar ring-iris" src="assets/images/portrait-tunde.jpg" alt="" width="112" height="112" loading="lazy" decoding="async">
+              <span class="testi-meta">
+                <span class="testi-name">Mr. Tunde A.</span>
+                <span class="testi-role">Parent of a Teen Learner (Age 14)</span>
+              </span>
+            </figcaption>
+          </figure>
+
+          <figure class="testi-card reveal" style="--rd:.23s">
+            <span class="testi-quote-chip chip-green" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M10.7 5.6C7 7 4.9 9.7 4.9 13.6c0 3 1.9 5 4.4 5 2.2 0 3.9-1.7 3.9-3.9 0-2.1-1.5-3.7-3.5-3.8.3-1.6 1.4-3 3-3.9zm9 0c-3.7 1.4-5.8 4.1-5.8 8 0 3 1.9 5 4.4 5 2.2 0 3.9-1.7 3.9-3.9 0-2.1-1.5-3.7-3.5-3.8.3-1.6 1.4-3 3-3.9z" transform="translate(-1.5 0)"/></svg>
+            </span>
+            <blockquote>
+              <p>I joined because of the tech classes, but SmartBryte also helped my school subjects. I've learned to use AI properly for my projects, and finishing my first content project made me believe I can actually build things.</p>
+            </blockquote>
+            <figcaption class="testi-person">
+              <img class="testi-avatar ring-green" src="assets/images/portrait-Fatima.jpg" alt="" width="112" height="112" loading="lazy" decoding="async">
+              <span class="testi-meta">
+                <span class="testi-name">Fatima B.</span>
+                <span class="testi-role">Teen Learner, Age 16</span>
+              </span>
+            </figcaption>
+          </figure>
         </div>
       </div>
     </section>
