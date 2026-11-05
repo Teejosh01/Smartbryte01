@@ -7,7 +7,11 @@
   <meta name="description" content="Give your child the knowledge and skills to excel in school, understand technology, solve problems, and create opportunities in the world ahead.">
   <meta name="theme-color" content="#FFF8ED">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/styles.css">
+  <noscript><style>.reveal { opacity: 1; transform: none; }</style></noscript>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%234255FF'/%3E%3Cpath d='M16 5l2.2 6.8L25 14l-6.8 2.2L16 23l-2.2-6.8L7 14l6.8-2.2z' fill='%23FFC224' transform='translate(0 2)'/%3E%3C/svg%3E">
 </head>
 <body>
@@ -27,42 +31,48 @@
       <!-- In-page navigation: labels are the section names from the content
            document; anchors point only to sections that exist on this page. -->
       <nav class="site-nav" aria-label="Homepage sections">
-        <a href="#why-choose-smartbryte">Why SmartBryte</a>
-        <a href="#our-programmes">Programmes</a>
-        <a href="#frequently-asked-questions">Questions</a>
+        <a href="#why-choose-smartbryte">Why Choose SmartBryte?</a>
+        <a href="#our-programmes">Our Programmes</a>
+        <a href="#frequently-asked-questions">Frequently Asked Questions</a>
       </nav>
 
-      <a class="btn btn-ink btn-sm" href="#enrol">Enrolment</a>
+      <a class="btn btn-ink btn-sm" href="#enrol">Apply Now</a>
     </div>
   </header>
 
   <main id="main">
 
     <!-- ======================= 1. HERO ======================= -->
-    <!-- Source: homepage content PDF; simplified at owner request. -->
+    <!-- Copy: SmartBryte_Complete_Homepage_Content.pdf — 1. Hero Section (verbatim) -->
     <section class="hero" id="top" aria-labelledby="hero-heading">
       <!-- scattered paper-cut decor (SuperHi influence) -->
+      <div class="decor decor-hero-a" aria-hidden="true"></div>
+      <div class="decor decor-hero-b" aria-hidden="true"></div>
 
       <div class="wrap hero-grid">
         <div class="hero-copy">
-          <h1 class="hero-heading" id="hero-heading">Academic learning. Practical digital skills.</h1>
+          <h1 class="hero-heading reveal" id="hero-heading">Turn Your Child Into a <span class="hl-iris">Future-Ready</span> <span class="hl-squiggle">Genius.</span></h1>
 
-          <p class="hero-lede">Give your child the knowledge and skills to excel in school, understand technology, solve problems, and create opportunities in the world ahead.</p>
+          <p class="hero-lede reveal">Give your child the knowledge and skills to excel in school, understand technology, solve problems, and create opportunities in the world ahead.</p>
 
-          <div class="cta-row">
+          <div class="cta-row reveal">
             <a class="btn btn-amber" href="#our-programmes">
-              <span>View programmes</span>
+              <span>Explore Our Programmes</span>
               <span class="arrow-badge" aria-hidden="true">
                 <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15M13 5l7 7-7 7"/></svg>
               </span>
             </a>
-            <a class="btn btn-ghost" href="#enrol">Enrolment</a>
+            <a class="btn btn-ghost" href="#enrol">Apply Now</a>
           </div>
 
-          <p class="age-note"><span class="age-dot" aria-hidden="true"></span>For learners aged 7-22.</p>
+          <p class="age-note reveal"><span class="age-dot" aria-hidden="true"></span>For learners aged 7-22.</p>
 
           <!-- playful doodle cluster beneath the calls to action -->
-
+          <div class="hero-doodles reveal" aria-hidden="true">
+            <svg class="doodle-wave" viewBox="0 0 120 14" width="104" height="12" fill="none" stroke="#FF6B4A" stroke-width="4" stroke-linecap="round"><path d="M3 10c8-8 14-8 22 0s14 8 22 0 14-8 22 0 14 8 22 0 12-6 18-2"/></svg>
+            <svg class="doodle-spark" viewBox="0 0 24 24" width="20" height="20"><path d="M12 0l2.7 9.3L24 12l-9.3 2.7L12 24l-2.7-9.3L0 12l9.3-2.7z" fill="#16AB59"/></svg>
+            <span class="doodle-dot"></span>
+          </div>
         </div>
 
         <!--
@@ -74,7 +84,12 @@
           assets/images/ with consented photos of actual students before any
           public launch. The composition is decorative: aria-hidden.
         -->
-        <div class="hero-stage" aria-hidden="true">
+        <div class="hero-stage reveal" aria-hidden="true">
+          <div class="shape shape-blob"></div>
+          <div class="shape shape-ring-lg"></div>
+          <div class="shape shape-chip" data-depth="14">
+            <span></span><span></span><span></span><span></span>
+          </div>
 
           <figure class="tile tile-amber">
             <img class="tile-photo pos-junior" src="assets/images/hero-junior.jpg" alt="" width="640" height="1147" decoding="async">
@@ -88,26 +103,41 @@
             <img class="tile-photo pos-adult" src="assets/images/hero-young-adult.jpg" alt="" width="640" height="1147" decoding="async">
           </figure>
 
+          <div class="shape shape-semi"></div>
+          <div class="shape shape-ring-sm"></div>
+          <div class="shape shape-dots"></div>
+          <svg class="shape shape-spark-a spin-slow" viewBox="0 0 24 24"><path d="M12 0l2.7 9.3L24 12l-9.3 2.7L12 24l-2.7-9.3L0 12l9.3-2.7z" fill="#FFC224"/></svg>
+          <svg class="shape shape-spark-b" viewBox="0 0 24 24"><path d="M12 0l2.7 9.3L24 12l-9.3 2.7L12 24l-2.7-9.3L0 12l9.3-2.7z" fill="#FF6B4A"/></svg>
+          <svg class="shape shape-spark-c spin-slow-rev" viewBox="0 0 24 24"><path d="M12 0l2.7 9.3L24 12l-9.3 2.7L12 24l-2.7-9.3L0 12l9.3-2.7z" fill="#4255FF"/></svg>
         </div>
       </div>
     </section>
 
     <!-- ======================= 2. INTRODUCTION ======================= -->
-    <!-- Source: homepage content PDF; simplified at owner request. -->
+    <!-- Copy: SmartBryte_Complete_Homepage_Content.pdf — 2. Introduction to SmartBryte (verbatim) -->
     <section class="intro" id="introduction" aria-labelledby="intro-heading">
       <div class="sheet sheet-chalk">
+        <div class="decor decor-intro-a" aria-hidden="true"></div>
+        <svg class="decor decor-intro-b" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.7 9.3L24 12l-9.3 2.7L12 24l-2.7-9.3L0 12l9.3-2.7z" fill="#FFBAC4"/></svg>
+        <div class="decor decor-intro-c" aria-hidden="true"></div>
 
         <div class="wrap">
-          <div class="intro-card">
+          <div class="intro-card reveal">
             <div class="intro-grid">
               <div class="intro-head">
-
-                <h2 class="intro-heading" id="intro-heading">Learning beyond school.</h2>
-
+                <p class="eyebrow"><span class="eyebrow-dash" aria-hidden="true"></span>Introduction to SmartBryte</p>
+                <h2 class="intro-heading" id="intro-heading">Education should prepare children for more than examinations.</h2>
+                <div class="intro-doodles" aria-hidden="true">
+                  <span class="mini-ring"></span>
+                  <svg viewBox="0 0 24 24" width="22" height="22"><path d="M12 0l2.7 9.3L24 12l-9.3 2.7L12 24l-2.7-9.3L0 12l9.3-2.7z" fill="#FF6B4A"/></svg>
+                  <span class="mini-semi"></span>
+                </div>
               </div>
 
               <div class="intro-body">
                 <p>The world is changing, and the knowledge and skills that young people need to succeed are changing with it. Gone are the days when good grades alone were enough to make a young person ready for the world of work. Today, especially in the age of AI, children need to know how to use technology, think through problems, develop ideas and turn what they know into something the world values.</p>
+
+                <p class="pull-line">That's what <mark>SmartBryte</mark> brings to your child's education.</p>
 
                 <p>Alongside their regular academic learning, our students explore technology, learn how to use AI, develop practical digital skills and work on projects that help them put their knowledge to use. They get to discover their interests, build confidence in their abilities and develop skills that can open doors to future opportunities.</p>
 
@@ -125,17 +155,17 @@
     </section>
 
     <!-- ======================= 3. WHY CHOOSE SMARTBRYTE? ======================= -->
-    <!-- Source: homepage content PDF; simplified at owner request. -->
+    <!-- Copy: SmartBryte_Complete_Homepage_Content.pdf — 3. Why Choose SmartBryte? (verbatim) -->
     <section class="sheet sheet-cream" id="why-choose-smartbryte" aria-labelledby="why-heading">
       <div class="wrap">
-        <div class="sec-head">
-
-          <h2 class="sec-heading" id="why-heading">Why SmartBryte</h2>
-
+        <div class="sec-head reveal">
+          <p class="eyebrow"><span class="eyebrow-dash" aria-hidden="true"></span>Why Choose SmartBryte?</p>
+          <h2 class="sec-heading" id="why-heading">An education that goes beyond the classroom.</h2>
+          <p class="sec-lede">Your child deserves opportunities to build strong academic skills, explore technology and put new knowledge to work. Here is what learning at SmartBryte offers.</p>
         </div>
 
         <div class="feature-grid">
-          <article class="feature-card">
+          <article class="feature-card reveal" style="--rd:.05s">
             <span class="fc-chip fc-amber" aria-hidden="true">
               <svg viewBox="0 0 64 64" width="30" height="30" fill="none" stroke="currentColor" stroke-width="4.4" stroke-linecap="round" stroke-linejoin="round"><path d="M32 17c-5-4.2-12-5.4-18.5-3.4v34c6.5-2 13.5-.8 18.5 3.4 5-4.2 12-5.4 18.5-3.4v-34C44 11.6 37 12.8 32 17Z"/><path d="M32 17v34"/></svg>
             </span>
@@ -143,7 +173,7 @@
             <p>Build a stronger understanding of Science, Technology, English and Mathematics, and develop the confidence to tackle schoolwork and new challenges.</p>
           </article>
 
-          <article class="feature-card">
+          <article class="feature-card reveal" style="--rd:.12s">
             <span class="fc-chip fc-iris" aria-hidden="true">
               <svg viewBox="0 0 64 64" width="30" height="30" fill="none" stroke="currentColor" stroke-width="4.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 20 10 32l12 12M42 20l12 12-12 12M36 14 28 50"/></svg>
             </span>
@@ -151,7 +181,7 @@
             <p>Learn how to use technology and explore skills such as website development, AI, content creation and digital marketing.</p>
           </article>
 
-          <article class="feature-card">
+          <article class="feature-card reveal" style="--rd:.19s">
             <span class="fc-chip fc-coral" aria-hidden="true">
               <svg viewBox="0 0 64 64" width="30" height="30" fill="none" stroke="currentColor" stroke-width="4.4" stroke-linecap="round" stroke-linejoin="round"><path d="M14 12h36a4 4 0 0 1 4 4v22a4 4 0 0 1-4 4H30l-12 10V16a4 4 0 0 1 4-4Z" transform="translate(-4 0)"/><path d="M22 27h.01M32 27h.01M42 27h.01" stroke-width="6"/></svg>
             </span>
@@ -159,7 +189,7 @@
             <p>Every student is assigned a teacher who supports their progress and communicates directly with parents.</p>
           </article>
 
-          <article class="feature-card span-3">
+          <article class="feature-card span-3 reveal" style="--rd:.26s">
             <span class="fc-chip fc-green" aria-hidden="true">
               <svg viewBox="0 0 64 64" width="30" height="30" fill="none" stroke="currentColor" stroke-width="4.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 52h18V34H12zM34 52h18V34H34zM32 12l11 16H21z"/></svg>
             </span>
@@ -167,7 +197,7 @@
             <p>Put lessons into practice through assignments, projects and activities that encourage students to create, try things out and solve problems.</p>
           </article>
 
-          <article class="feature-card span-3">
+          <article class="feature-card span-3 reveal" style="--rd:.33s">
             <span class="fc-chip fc-sky" aria-hidden="true">
               <svg viewBox="0 0 64 64" width="30" height="30" fill="none" stroke="currentColor" stroke-width="4.4" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="14" width="44" height="40" rx="5"/><path d="M10 26h44M22 8v10M42 8v10M32 34v8l6 4"/></svg>
             </span>
@@ -179,87 +209,93 @@
     </section>
 
     <!-- ======================= 4. OUR PROGRAMMES ======================= -->
-    <!-- Source: homepage content PDF; simplified at owner request. -->
+    <!-- Copy: SmartBryte_Complete_Homepage_Content.pdf — 4. Our Programmes (verbatim) -->
     <section class="sheet sheet-white" id="our-programmes" aria-labelledby="prog-heading">
       <div class="wrap">
-        <div class="sec-head">
-
-          <h2 class="sec-heading" id="prog-heading">Programmes</h2>
-
+        <div class="sec-head reveal">
+          <p class="eyebrow"><span class="eyebrow-dash" aria-hidden="true"></span>Our Programmes</p>
+          <h2 class="sec-heading" id="prog-heading">Learning designed for every stage of growth.</h2>
+          <p class="sec-lede">A seven-year-old learns differently from a teenager or young adult. SmartBryte has three learning pathways, so students can build skills at a level that fits their age and stage.</p>
         </div>
 
         <div class="prog-grid">
-          <article class="prog-card prog-amber">
-
+          <article class="prog-card prog-amber reveal" style="--rd:.05s">
+            <svg class="prog-motif" viewBox="0 0 64 64" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M32 5c7 7 10.5 16.5 10.5 27h-21C21.5 21.5 25 12 32 5Z"/><circle cx="32" cy="23" r="4.6"/><path d="M21.5 33.5C17.5 37 15.5 42 15 47l6.5-3M42.5 33.5c4 3.5 6 8.5 6.5 13.5l-6.5-3"/><path d="M26.5 41.5c.8 5 2.8 8.8 5.5 11.5 2.7-2.7 4.7-6.5 5.5-11.5"/></svg>
             <h3 class="prog-name">Junior Learners <span class="sr-only">|</span> <span class="prog-age">Ages 7-12</span></h3>
-
+            <p class="prog-tagline">A strong foundation for curious minds.</p>
             <p class="prog-body">Young learners strengthen their academic foundations while exploring technology, digital literacy and creative problem-solving through engaging, age-appropriate activities.</p>
-            <p class="prog-focus">Academic foundations, digital literacy, creative thinking and introductory technology skills.</p>
-
+            <p class="prog-focus"><span class="focus-label">Focus areas:</span> Academic foundations, digital literacy, creative thinking and introductory technology skills.</p>
+            <!-- IMPLEMENTATION NOTE: No URL supplied for the Junior Learners
+                 programme page — static button per brief, awaiting destination. -->
+            <button type="button" class="btn btn-card-dark">Explore Junior Learners</button>
           </article>
 
-          <article class="prog-card prog-iris">
-
+          <article class="prog-card prog-iris reveal" style="--rd:.14s">
+            <svg class="prog-motif" viewBox="0 0 64 64" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="32" cy="27" r="12"/><path d="M32 6v4M13.5 13.5l3 3M50.5 13.5l-3 3M9 27h4.5M50.5 27H55"/><path d="M25.5 45.5h13M27.5 51.5h9M29.5 57.5h5"/></svg>
             <h3 class="prog-name">Teen Learners <span class="sr-only">|</span> <span class="prog-age">Ages 13-19</span></h3>
-
+            <p class="prog-tagline">Turning curiosity into capability.</p>
             <p class="prog-body">Teenagers strengthen their academic knowledge and start using digital tools to create, build projects and discover skills they can keep developing.</p>
-            <p class="prog-focus">Academic development, coding, AI fluency, content creation and digital entrepreneurship.</p>
-
+            <p class="prog-focus"><span class="focus-label">Focus areas:</span> Academic development, coding, AI fluency, content creation and digital entrepreneurship.</p>
+            <!-- IMPLEMENTATION NOTE: No URL supplied for the Teen Learners
+                 programme page — static button per brief, awaiting destination. -->
+            <button type="button" class="btn btn-amber">Explore Teen Learners</button>
           </article>
 
-          <article class="prog-card prog-green">
-
+          <article class="prog-card prog-green reveal" style="--rd:.23s">
+            <svg class="prog-motif" viewBox="0 0 64 64" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M32 17c-5-4.2-12-5.4-18.5-3.4v34c6.5-2 13.5-.8 18.5 3.4 5-4.2 12-5.4 18.5-3.4v-34C44 11.6 37 12.8 32 17Z"/><path d="M32 17v34"/></svg>
             <h3 class="prog-name">Young Adults <span class="sr-only">|</span> <span class="prog-age">Ages 20-22</span></h3>
-
+            <p class="prog-tagline">Developing skills for real-world opportunities.</p>
             <p class="prog-body">Young adults develop practical digital and professional skills, work on projects and build capabilities they can apply to further study, careers, freelancing or business.</p>
-            <p class="prog-focus">Advanced digital skills, technology, professional development and practical projects.</p>
-
+            <p class="prog-focus"><span class="focus-label">Focus areas:</span> Advanced digital skills, technology, professional development and practical projects.</p>
+            <!-- IMPLEMENTATION NOTE: No URL supplied for the Young Adults
+                 programme page — static button per brief, awaiting destination. -->
+            <button type="button" class="btn btn-card-light">Explore Young Adults</button>
           </article>
         </div>
       </div>
     </section>
 
     <!-- ======================= 5. HOW SMARTBRYTE BENEFITS STUDENTS ======================= -->
-    <!-- Source: homepage content PDF; simplified at owner request. -->
+    <!-- Copy: SmartBryte_Complete_Homepage_Content.pdf — 5. How SmartBryte Benefits Students (verbatim) -->
     <section class="sheet sheet-chalk" id="how-smartbryte-benefits-students" aria-labelledby="benefits-heading">
       <div class="wrap">
         <div class="benefits-layout">
-          <div class="sec-head benefits-head">
-
-            <h2 class="sec-heading" id="benefits-heading">Skills for life</h2>
-
+          <div class="sec-head benefits-head reveal">
+            <p class="eyebrow"><span class="eyebrow-dash" aria-hidden="true"></span>How SmartBryte Benefits Students</p>
+            <h2 class="sec-heading" id="benefits-heading">It's not just about what they learn. It's about what they become.</h2>
+            <p class="sec-lede">Every lesson is an opportunity to grow. As students work through school subjects and practical digital projects, they build abilities they can use in class, at home and later in life.</p>
           </div>
 
           <ol class="benefit-list">
-            <li class="benefit-row">
+            <li class="benefit-row reveal" style="--rd:.05s">
               <span class="benefit-num num-amber" aria-hidden="true">01</span>
               <div>
                 <h3>Think Through Problems</h3>
                 <p>Learn to ask questions, examine ideas and find workable solutions.</p>
               </div>
             </li>
-            <li class="benefit-row">
+            <li class="benefit-row reveal" style="--rd:.12s">
               <span class="benefit-num num-iris" aria-hidden="true">02</span>
               <div>
                 <h3>Use Technology with Confidence</h3>
                 <p>Become more comfortable with digital tools and learn to use them for useful, creative work.</p>
               </div>
             </li>
-            <li class="benefit-row">
+            <li class="benefit-row reveal" style="--rd:.19s">
               <span class="benefit-num num-coral" aria-hidden="true">03</span>
               <div>
                 <h3>Turn Ideas into Projects</h3>
                 <p>Make things, test ideas and experience the satisfaction of finishing what they start.</p>
               </div>
             </li>
-            <li class="benefit-row">
+            <li class="benefit-row reveal" style="--rd:.26s">
               <span class="benefit-num num-green" aria-hidden="true">04</span>
               <div>
                 <h3>Discover New Opportunities</h3>
                 <p>Explore interests and build skills that may lead to further learning, future careers or entrepreneurship.</p>
               </div>
             </li>
-            <li class="benefit-row">
+            <li class="benefit-row reveal" style="--rd:.33s">
               <span class="benefit-num num-sky" aria-hidden="true">05</span>
               <div>
                 <h3>Grow into Independent Learners</h3>
@@ -281,15 +317,14 @@
          photos) with genuine, consented testimonials before any public launch. -->
     <section class="sheet sheet-cream" id="testimonials" aria-labelledby="testimonials-heading">
       <div class="wrap">
-        <div class="sec-head sec-head-center">
-
-          <h2 class="sec-heading" id="testimonials-heading">Sample experiences</h2>
-
+        <div class="sec-head sec-head-center reveal">
+          <p class="eyebrow eyebrow-center"><span class="eyebrow-dash" aria-hidden="true"></span>Testimonials<span class="eyebrow-dash" aria-hidden="true"></span></p>
+          <h2 class="sec-heading" id="testimonials-heading">See what families are saying about SmartBryte.</h2>
+          <p class="sec-lede">Hear from parents and learners about their experience, the projects they have worked on and the progress they have made.</p>
         </div>
 
-        <p class="sample-notice">Illustrative samples, not verified reviews. Portraits are AI-generated.</p>
         <div class="testi-grid">
-          <figure class="testi-card">
+          <figure class="testi-card reveal" style="--rd:.05s">
             <span class="testi-quote-chip chip-amber" aria-hidden="true">
               <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M10.7 5.6C7 7 4.9 9.7 4.9 13.6c0 3 1.9 5 4.4 5 2.2 0 3.9-1.7 3.9-3.9 0-2.1-1.5-3.7-3.5-3.8.3-1.6 1.4-3 3-3.9zm9 0c-3.7 1.4-5.8 4.1-5.8 8 0 3 1.9 5 4.4 5 2.2 0 3.9-1.7 3.9-3.9 0-2.1-1.5-3.7-3.5-3.8.3-1.6 1.4-3 3-3.9z" transform="translate(-1.5 0)"/></svg>
             </span>
@@ -305,7 +340,7 @@
             </figcaption>
           </figure>
 
-          <figure class="testi-card">
+          <figure class="testi-card reveal" style="--rd:.14s">
             <span class="testi-quote-chip chip-iris" aria-hidden="true">
               <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M10.7 5.6C7 7 4.9 9.7 4.9 13.6c0 3 1.9 5 4.4 5 2.2 0 3.9-1.7 3.9-3.9 0-2.1-1.5-3.7-3.5-3.8.3-1.6 1.4-3 3-3.9zm9 0c-3.7 1.4-5.8 4.1-5.8 8 0 3 1.9 5 4.4 5 2.2 0 3.9-1.7 3.9-3.9 0-2.1-1.5-3.7-3.5-3.8.3-1.6 1.4-3 3-3.9z" transform="translate(-1.5 0)"/></svg>
             </span>
@@ -321,7 +356,7 @@
             </figcaption>
           </figure>
 
-          <figure class="testi-card">
+          <figure class="testi-card reveal" style="--rd:.23s">
             <span class="testi-quote-chip chip-green" aria-hidden="true">
               <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M10.7 5.6C7 7 4.9 9.7 4.9 13.6c0 3 1.9 5 4.4 5 2.2 0 3.9-1.7 3.9-3.9 0-2.1-1.5-3.7-3.5-3.8.3-1.6 1.4-3 3-3.9zm9 0c-3.7 1.4-5.8 4.1-5.8 8 0 3 1.9 5 4.4 5 2.2 0 3.9-1.7 3.9-3.9 0-2.1-1.5-3.7-3.5-3.8.3-1.6 1.4-3 3-3.9z" transform="translate(-1.5 0)"/></svg>
             </span>
@@ -341,15 +376,15 @@
     </section>
 
     <!-- ======================= 7. FREQUENTLY ASKED QUESTIONS ======================= -->
-    <!-- Source: homepage content PDF; simplified at owner request. -->
+    <!-- Copy: SmartBryte_Complete_Homepage_Content.pdf — 7. Frequently Asked Questions (verbatim) -->
     <section class="sheet sheet-white" id="frequently-asked-questions" aria-labelledby="faq-heading">
       <div class="wrap">
-        <div class="sec-head sec-head-center">
-
-          <h2 class="sec-heading" id="faq-heading">Questions</h2>
+        <div class="sec-head sec-head-center reveal">
+          <p class="eyebrow eyebrow-center"><span class="eyebrow-dash" aria-hidden="true"></span>Frequently Asked Questions<span class="eyebrow-dash" aria-hidden="true"></span></p>
+          <h2 class="sec-heading" id="faq-heading">Questions parents often ask.</h2>
         </div>
 
-        <div class="faq-list">
+        <div class="faq-list reveal">
           <details class="faq-item" name="faq" open>
             <summary>What age groups can enrol at SmartBryte?<span class="faq-chevron" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 9 7 7 7-7"/></svg></span></summary>
             <p>Our programmes are designed for Junior Learners (7-12), Teen Learners (13-19) and Young Adults (20-22).</p>
@@ -399,13 +434,25 @@
     </section>
 
     <!-- ======================= 8. FINAL ENROLMENT CALL TO ACTION ======================= -->
-    <!-- Source: homepage content PDF; simplified at owner request. -->
+    <!-- Copy: SmartBryte_Complete_Homepage_Content.pdf — 8. Final Enrolment Call to Action (verbatim) -->
     <section class="sheet sheet-iris" id="enrol" aria-labelledby="enrol-heading">
+      <div class="decor decor-cta-a" aria-hidden="true"></div>
+      <div class="decor decor-cta-b" aria-hidden="true"></div>
+      <svg class="decor decor-cta-c spin-slow" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.7 9.3L24 12l-9.3 2.7L12 24l-2.7-9.3L0 12l9.3-2.7z" fill="#FFC224"/></svg>
+      <svg class="decor decor-cta-d" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.7 9.3L24 12l-9.3 2.7L12 24l-2.7-9.3L0 12l9.3-2.7z" fill="#FFBAC4"/></svg>
+      <div class="decor decor-cta-e" aria-hidden="true"></div>
 
-      <div class="wrap enrol-inner">
-        <h2 class="enrol-heading" id="enrol-heading">Enrol at SmartBryte</h2>
-
-        <p class="enrol-status">Applications are not available on this website yet.</p>
+      <div class="wrap enrol-inner reveal">
+        <h2 class="enrol-heading" id="enrol-heading">Give your child the skills to make the most of tomorrow.</h2>
+        <p class="enrol-body">Help your child build stronger academic foundations, explore the possibilities of technology and develop practical skills they can use as they grow. Their SmartBryte journey can start here.</p>
+        <!-- IMPLEMENTATION NOTE: No application URL supplied — static button
+             per brief, awaiting the real enrolment destination. -->
+        <button type="button" class="btn btn-amber btn-lg">
+          <span>Apply Now</span>
+          <span class="arrow-badge" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15M13 5l7 7-7 7"/></svg>
+          </span>
+        </button>
       </div>
     </section>
   </main>
@@ -413,6 +460,9 @@
   <!-- ======================= FOOTER ======================= -->
   <footer class="site-footer">
     <div class="sheet sheet-plum footer-sheet">
+      <div class="decor decor-foot-a" aria-hidden="true"></div>
+      <div class="decor decor-foot-b" aria-hidden="true"></div>
+      <svg class="decor decor-foot-c" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.7 9.3L24 12l-9.3 2.7L12 24l-2.7-9.3L0 12l9.3-2.7z" fill="#FFC224"/></svg>
 
       <div class="wrap footer-inner">
         <div class="footer-top">
@@ -423,9 +473,9 @@
             <span class="brand-name">SmartBryte</span>
           </a>
           <nav class="footer-nav" aria-label="Homepage sections">
-            <a href="#why-choose-smartbryte">Why SmartBryte</a>
-            <a href="#our-programmes">Programmes</a>
-            <a href="#frequently-asked-questions">Questions</a>
+            <a href="#why-choose-smartbryte">Why Choose SmartBryte?</a>
+            <a href="#our-programmes">Our Programmes</a>
+            <a href="#frequently-asked-questions">Frequently Asked Questions</a>
           </nav>
         </div>
         <p class="copyright">&copy; <span id="year">2026</span> SmartBryte</p>
@@ -433,5 +483,6 @@
     </div>
   </footer>
 
+  <script src="assets/script.js" defer></script>
 </body>
 </html>
