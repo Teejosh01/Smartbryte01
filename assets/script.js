@@ -17,22 +17,6 @@
   window.addEventListener("scroll", onScroll, { passive: true });
   onScroll();
 
-  /* Entrance reveals */
-  var revealEls = document.querySelectorAll(".reveal");
-  if (reducedMotion.matches || !("IntersectionObserver" in window)) {
-    revealEls.forEach(function (el) { el.classList.add("is-in"); });
-  } else {
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("is-in");
-          io.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.18, rootMargin: "0px 0px -6% 0px" });
-    revealEls.forEach(function (el) { io.observe(el); });
-  }
-
   /* Gentle pointer parallax on selected hero shapes (fine pointers only).
      Tiles keep their own CSS float; only [data-depth] accents drift. */
   var stage = document.querySelector(".hero-stage");
